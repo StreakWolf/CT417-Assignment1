@@ -1,6 +1,5 @@
-package College;
-
 import org.joda.time.DateTime;
+
 import java.util.ArrayList;
 
 public class Student {
@@ -12,12 +11,12 @@ public class Student {
     Course course;
     ArrayList<Module> modules;
 
-    public Student(String name, int age, DateTime dob, int id, String username, Course course, ArrayList<Module> modules) {
+    public Student(String name, int age, DateTime dob, int id, Course course, ArrayList<Module> modules) {
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.username = getUsername(name, age);
+        this.username = getUsername();
         this.course = course;
         this.modules = modules;
     }
@@ -70,8 +69,7 @@ public class Student {
         this.modules = modules;
     }
 
-    public String getUsername(String name, int age) {
-        String username = name + age;
+    public String getUsername() {
         return name + age;
     }
 }
