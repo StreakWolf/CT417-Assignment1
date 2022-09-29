@@ -16,7 +16,7 @@ public class Student {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.username = getUsername();
+        username = getUsername();
         this.course = course;
         this.modules = modules;
     }
