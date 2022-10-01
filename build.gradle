@@ -16,8 +16,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
-    implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.1.SP1.RELEASE'}
-
+    implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.0.RELEASE'
+}
 test {
     useJUnitPlatform()
 }

@@ -9,10 +9,9 @@ public class Course {
     DateTime startDate;
     DateTime endDate;
 
-    public Course(String name, ArrayList<Module> modules, ArrayList<Student> students, DateTime startDate, DateTime endDate){
+    public Course(String name, ArrayList<Module> modules, DateTime startDate, DateTime endDate){
         this.name = name;
         this.modules = modules;
-        this.students = students;
         this.startDate = startDate;
         this.endDate = endDate;
     }
@@ -55,5 +54,9 @@ public class Course {
 
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
     }
 }

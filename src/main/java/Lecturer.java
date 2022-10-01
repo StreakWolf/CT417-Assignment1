@@ -10,7 +10,7 @@ public class Lecturer {
     String username;
     ArrayList<Module> modules;
 
-    public Lecturer(String name, int age, DateTime dob, int id, ArrayList<Module> modules) {
+    public Lecturer(String name, int age, DateTime dob, int id) {
         this.name = name;
         this.age = age;
         this.dob = dob;
@@ -67,4 +67,7 @@ public class Lecturer {
         return name + age;
     }
 
+    public void addModule(Module module) {
+        modules.add(module);
+    }
 }

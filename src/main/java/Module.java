@@ -7,11 +7,11 @@ public class Module {
     ArrayList<Course> courses;
     Lecturer lecturer;
 
-    public Module(String name, String id, ArrayList<Student> students, Lecturer lecturer, ArrayList<Course> courses){
+    public Module(String name, String id, Lecturer lecturer){
         this.name = name;
         this.id = id;
-        this.students = students;
         this.lecturer = lecturer;
+        lecturer.addModule(this);
     }
 
     public String getName() {
