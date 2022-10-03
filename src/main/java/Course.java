@@ -14,6 +14,7 @@ public class Course {
         this.modules = modules;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.students = new ArrayList<Student>();
     }
 
     public String getName() {

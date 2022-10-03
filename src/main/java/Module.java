@@ -12,6 +12,7 @@ public class Module {
         this.id = id;
         this.lecturer = lecturer;
         lecturer.addModule(this);
+        this.students = new ArrayList<Student>();
     }
 
     public String getName() {
@@ -36,6 +37,10 @@ public class Module {
 
     public void setStudents(ArrayList<Student> students) {
         this.students = students;
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
     public ArrayList<Course> getCourses() {

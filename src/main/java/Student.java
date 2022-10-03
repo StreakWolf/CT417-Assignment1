@@ -17,6 +17,7 @@ public class Student {
         this.dob = dob;
         this.id = id;
         username = getUsername();
+        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {
@@ -59,6 +60,9 @@ public class Student {
         this.course = course;
         course.addStudent(this);
         modules = course.getModules();
+        for (Module module : modules) {
+            module.addStudent(this);
+        }
     }
 
     public ArrayList<Module> getModules() {
