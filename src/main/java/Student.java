@@ -60,9 +60,6 @@ public class Student {
         this.course = course;
         course.addStudent(this);
         modules = course.getModules();
-        for (Module module : modules) {
-            module.addStudent(this);
-        }
     }
 
     public ArrayList<Module> getModules() {
@@ -75,5 +72,9 @@ public class Student {
 
     public String getUsername() {
         return name + age;
+    }
+
+    public String toString() {
+        return "Student: " + id + ", " + username;
     }
 }

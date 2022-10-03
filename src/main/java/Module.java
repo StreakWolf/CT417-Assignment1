@@ -58,4 +58,8 @@ public class Module {
     public void setLecturer(Lecturer lecturer) {
         this.lecturer = lecturer;
     }
+
+    public String toString() {
+        return name;
+    }
 }

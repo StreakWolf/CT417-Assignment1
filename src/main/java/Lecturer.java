@@ -70,4 +70,8 @@ public class Lecturer {
     public void addModule(Module module) {
         modules.add(module);
     }
+
+    public String toString() {
+        return "Lecturer: " + id + ", " + username;
+    }
 }
