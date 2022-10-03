@@ -16,7 +16,7 @@ public class Lecturer {
         this.dob = dob;
         this.id = id;
         this.username = getUsername();
-        this.modules = modules;
+        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {
