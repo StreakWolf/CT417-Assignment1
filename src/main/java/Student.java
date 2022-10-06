@@ -56,10 +56,8 @@ public class Student {
         return course;
     }
 
-    public void register(Course course) {
+    public void setCourse(Course course) {
         this.course = course;
-        course.addStudent(this);
-        modules = course.getModules();
     }
 
     public ArrayList<Module> getModules() {
