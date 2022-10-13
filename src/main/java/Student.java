@@ -65,7 +65,7 @@ public class Student {
     }
 
     public void setModules(ArrayList<Module> modules) {
-        this.modules = modules;
+        this.modules = new ArrayList<>(modules);
     }
 
     public void addModule(Module module) {
