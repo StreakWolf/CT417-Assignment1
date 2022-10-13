@@ -68,6 +68,10 @@ public class Student {
         this.modules = modules;
     }
 
+    public void addModule(Module module) {
+        modules.add(module);
+    }
+
     public String getUsername() {
         return name + age;
     }
