@@ -19,16 +19,8 @@ public class Module {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public ArrayList<Student> getStudents() {
@@ -45,10 +37,6 @@ public class Module {
 
     public ArrayList<Course> getCourses() {
         return courses;
-    }
-
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
     }
 
     public Lecturer getLecturer() {
