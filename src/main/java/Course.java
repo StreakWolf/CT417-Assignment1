@@ -21,10 +21,6 @@ public class Course {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public ArrayList<Module> getModules() {
         return modules;
     }
@@ -35,10 +31,6 @@ public class Course {
 
     public ArrayList<Student> getStudents() {
         return students;
-    }
-
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
     }
 
     public DateTime getStartDate() {
