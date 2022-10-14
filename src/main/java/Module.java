@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * A class that represents a module (e.g. Software Engineering III)
+ */
 public class Module {
     String name;
     String id;
@@ -12,7 +15,7 @@ public class Module {
         this.id = id;
         this.lecturer = lecturer;
         lecturer.addModule(this);
-        this.students = new ArrayList<Student>();
+        this.students = new ArrayList<>();
     }
 
     public String getName() {

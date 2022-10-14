@@ -2,6 +2,9 @@ import org.joda.time.DateTime;
 
 import java.util.ArrayList;
 
+/**
+ * A class that represents a course (e.g. Engineering)
+ */
 public class Course {
     String name;
     ArrayList<Module> modules;
@@ -14,8 +17,9 @@ public class Course {
         this.modules = modules;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.students = new ArrayList<Student>();
+        this.students = new ArrayList<>();
     }
+
 
     public String getName() {
         return name;
@@ -24,6 +28,7 @@ public class Course {
     public ArrayList<Module> getModules() {
         return modules;
     }
+
 
     public void setModules(ArrayList<Module> modules) {
         this.modules = modules;

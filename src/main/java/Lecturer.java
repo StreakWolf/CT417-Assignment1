@@ -2,6 +2,9 @@ import org.joda.time.DateTime;
 
 import java.util.ArrayList;
 
+/**
+ * A class that represents a lecturer within a college
+ */
 public class Lecturer {
     String name;
     int age;
@@ -16,7 +19,7 @@ public class Lecturer {
         this.dob = dob;
         this.id = id;
         this.username = getUsername();
-        this.modules = new ArrayList<Module>();
+        this.modules = new ArrayList<>();
     }
 
     public String getName() {
