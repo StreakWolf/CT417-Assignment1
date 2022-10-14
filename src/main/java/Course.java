@@ -57,7 +57,7 @@ public class Course {
     public void addStudent(Student student) {
         students.add(student);
         for (Module module : modules) {
-            module.setStudents(students);
+            module.addStudent(student);
         }
     }
 

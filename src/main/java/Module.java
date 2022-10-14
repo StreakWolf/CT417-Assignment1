@@ -31,7 +31,7 @@ public class Module {
     }
 
     public void setStudents(ArrayList<Student> students) {
-        this.students = students;
+        this.students = new ArrayList<>(students);
     }
 
     public void addStudent(Student student) {
