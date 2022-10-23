@@ -18,7 +18,7 @@ public class Lecturer {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.username = getUsername();
+        this.username = getUsername(); // Generates username
         this.modules = new ArrayList<>();
     }
 

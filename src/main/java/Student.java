@@ -19,7 +19,7 @@ public class Student {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        username = getUsername();
+        username = getUsername(); // Generates username
         this.modules = new ArrayList<>();
     }
 

@@ -54,6 +54,10 @@ public class Course {
         this.endDate = endDate;
     }
 
+    /**
+     * Adds a student to the course, and also to the modules within the course
+     * @param student A student object
+     */
     public void addStudent(Student student) {
         students.add(student);
         for (Module module : modules) {
